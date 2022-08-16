@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="page-header__nav">
+        <a href="" class="logos page-header__logos">
+          <img
+            src="./images/new/drink.jpg"
+            alt=""
+            width="100"
+            class="logos__image"
+          />
+          <span class="logo__text">Технокряк</span>
+        </a>
+
+        <ul class="site-nav">
+          <li class="site-nav__item">
+            <a class="site-nav__link" href=""
+              ><span class="site-nav__icon">Иконка</span>
+              <span class="site-nav__label">О нас</span>
+            </a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href=""
+              ><span class="site-nav__icon">Иконка</span>Портфолио</a
+            >
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link site-nav__link--active" href=""
+              ><span class="site-nav__icon">Иконка</span>В корзину</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <ul class="cards-set">
+      <li class="cards-set__item">
+        <article class="product">
+          <img class="product__image" src="./images/picture/boxes.jpg" alt="" />
+          <div class="product__meta">
+            <h3 class="product__name">Название продукта</h3>
+            <p class="product__price">193 кредита</p>
+            <button class="product__button">В корзину</button>
+          </div>
+        </article>
+      </li>
+
+      <li class="cards-set__item">
+        <article class="product">
+          <img class="product__image" src="./images/picture/boxes.jpg" alt="" />
+          <div class="product__meta">
+            <h3 class="product__name">Название продукта</h3>
+            <p class="product__price">193 кредита</p>
+            <button class="product__button">В корзину</button>
+          </div>
+        </article>
+      </li>
+    </ul>
+
+    <p class="notification notificatin--success">
+      Пополнение счета
+      <span class="notification__icon notification__icon--append">o</span>
+    </p>
+    <p class="notification notification--warning">
+      <span class="notification__icon notification__icon--prepend">o</span>
+      Внимание, будут изменены тарифы
+    </p>
+    <p class="notification notification--error">
+      Ошибка проведения транзакции
+      <span class="notification__icon">0</span>
+    </p>
+
+    <button class="buttons">
+      <span class="buttons__icon">Иконка</span>
+      <span class="buttons__label">Текст кнопка</span>
+    </button>
+
+    <footer class="pag-footer">
+      <a href="" class="logos pag-footer__logos">
+        <img
+          src="./images/new/drink.jpg"
+          alt=""
+          width="100"
+          class="logos__image"
+        />
+        <span class="logo__text logos__text--inverse">Технокряк</span>
+      </a>
+    </footer>
+
+    <!-- CSS -->
+
+    <!-- .page-header{
+  display: flex;
+}
+.page-header__nav{
+display: flex;
+}
+.site-nav{
+  display: flex;
+}
+.site-nav__item{
+  margin-right: 20px;
+}
+.site-nav__item:last-child{
+  margin-right: 0;
+}
+.site-nav__link{
+  display: block;
+  padding: 10px 20px;
+  color: currentColor;
+}
+
+.site-nav__link:hover{
+  color: orangered;
+}
+.site-nav__link--active{
+  color: red;
+}
+.site-nav__icon{
+  display: inline-block;
+  padding: 5px;
+  background-color: teal;
+  color: #fff;
+}
+/*------- logo-------- */
+.logos{
+  display: inline-flex;
+  align-items: center;
+}
+.page-header__logos{
+  margin-right: 50px;
+}
+.logos__image{
+  display: block;
+  margin-right: 4px;
+}
+.logos__text{
+  text-transform: uppercase;
+ 
+}
+/* .logos__text--inverse{
+  color: #fff;
+} */
+/* другой вариант */
+.pag-footer__logos{
+color: #fff;
+}
+
+/* -------card-set */
+.cards-set{
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+.cards-set__item{
+width: 300px;
+
+margin: 15px; 
+}
+/* --product------------- */
+.product{}
+.product__image{}
+.product__meta{}
+.product__name{}
+.product__price{}
+.product__button{}
+
+/* ---------pag-footer-------- */
+.pag-footer{
+  background-color:yellow;
+}
+
+/* ---------notification------- */
+.notification{
+  display: flex;
+ padding: 20px;
+ margin: 0;
+ max-width: 400px;
+background-color: green;
+color: pink;
+
+}
+.notificatin--success{
+  background-color: blue;
+}
+.notification--warning{
+  background-color: orange;
+}
+.notification--error{
+  background-color: red;
+}
+.notification__icon{
+  width: 20px;
+  height: 20px;
+  background-color:black ;
+  display: none;
+}
+.notification__icon--append{
+  margin-left: 20px;
+}
+.notification__icon--prepend{
+  margin-right: 20px;
+}
+.notification:hover .notification__icon{
+display: block;
+} -->
+  </body>
+</html>

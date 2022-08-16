@@ -1,0 +1,54 @@
+.footer-socials-wrapp {
+    display: flex;
+}
+
+.socials-footer {
+
+    margin-left: 70px;
+    // margin-right: 93px;
+
+}
+
+.socials-title {
+    @include font($fw:700);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: left;
+
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+
+    color: var(--third-color-text);
+}
+
+.social-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms var(--timing-function);
+&:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+}
+
+// .social-link:hover,
+// .social-link:focus {
+//     background-color: var(--accent-color);
+// }
+
+.social-icon {
+    fill: #ffffff;
+}
+
